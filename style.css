@@ -1,0 +1,134 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    padding: 5px;
+    margin: 0;
+    color: white;
+    background-color: rgb(41, 0, 53);
+
+    min-height: 100vh;
+}
+.fhg{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: auto;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: auto;
+}
+.brand-name{
+    margin-left: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: oblique;
+    color: khaki;
+}
+.brand-name:hover{
+    color: white;
+}
+
+.sub-nav ul{
+    display: inline-block;
+    list-style: none;
+}
+.sub-nav .btn{
+    margin-top: 1rem;
+}
+.sub-nav a{
+    text-decoration: none;
+}
+
+.main-nav ul{
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+.main-nav a{
+    color: inherit;
+    padding: 1rem;
+    text-decoration: none;
+}
+.main-nav a:hover{
+    color: khaki;
+}
+.btn{
+    padding: 3px;
+    background-color: red;
+    color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+.content{
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.content #topics{
+    list-style: none;
+}
+.blog-list{
+    flex: 1;
+    background-color: rgba(221, 169, 236, 0.377);
+    margin: 0.5rem;
+    border-radius: 3%;
+}
+.blog-post{
+    flex: 4;
+    background-color: rgba(221, 169, 236, 0.377);
+    margin: 0.5rem;
+    border-radius: 3%;
+    padding: 20px;
+    color:black;
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: black;
+    color: inherit;
+    padding: 1rem;
+}
+.ft{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+}
+
+@media screen and ( min-width:800px) {
+    .content{
+        flex-direction: row;
+}
+.main-nav ul{
+    display: flex;
+}
+
+.brand{
+    margin: 10px;
+    
+}
+.sub-nav{
+    display: none;
+}
+.ft{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+
+}
